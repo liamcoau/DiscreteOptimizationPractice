@@ -60,6 +60,7 @@ def solve_it (input_data):
         items.append(Item(i-1, int(parts[0]), int(parts[1]), float(parts[0]) / float(parts[1])))
 
     global best, decisions_for_best
+    best = 0
     decisions_for_best = [None] * item_count
 
     def depth_first_decide (decisions, val):
